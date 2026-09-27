@@ -8,11 +8,48 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <main class="shell">
-    <p class="eyebrow">Seminario de Proyecto Final · UdeMM</p>
-    <h1>Biblioteca Ferroviaria Central Digital</h1>
-    <p>Mini demo / prueba de concepto. Infraestructura inicial en preparación.</p>
-  </main>
-  <script src="js/app.js"></script>
+<header class="topbar">
+  <div class="brand"><strong>BFCD</strong><span>Biblioteca Ferroviaria Central Digital</span></div>
+  <nav><a href="#inicio">Inicio</a><a href="#biblioteca">Biblioteca</a><a href="#acerca">Acerca</a></nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+  <p class="eyebrow">Seminario de Proyecto Final · UdeMM</p>
+  <h1>El patrimonio ferroviario, <span>encontrable.</span></h1>
+  <p class="lead">Prueba de concepto de un repositorio ferroviario centralizado con catalogación normalizada, búsqueda y consulta documental.</p>
+  <div class="stats">
+    <article><b id="stat-total">—</b><span>objetos piloto</span></article>
+    <article><b id="stat-colecciones">—</b><span>colecciones activas</span></article>
+    <article><b>100</b><span>objetos previstos</span></article>
+  </div>
+</section>
+
+<section id="biblioteca" class="library">
+  <div class="section-head"><div><p class="eyebrow">Catálogo piloto</p><h2>Biblioteca</h2></div><span id="resultado">Cargando…</span></div>
+  <div class="filters">
+    <label class="search"><span>Buscar</span><input id="q" type="search" placeholder="Ej.: Adrogué, BAP, Neuquén, locomotoras…"></label>
+    <label><span>Colección</span><select id="coleccion"><option value="">Todas</option></select></label>
+    <label><span>Tipo</span><select id="tipo"><option value="">Todos</option></select></label>
+    <label><span>Año</span><select id="anio"><option value="">Todos</option></select></label>
+  </div>
+  <div id="grid" class="grid" aria-live="polite"></div>
+  <div id="error" class="error" hidden></div>
+</section>
+
+<section id="acerca" class="about">
+  <p class="eyebrow">Sobre la prueba de concepto</p>
+  <h2>De archivos dispersos a conocimiento recuperable.</h2>
+  <p>La BFCD organiza objetos documentales ferroviarios mediante metadatos comunes, colecciones y criterios de búsqueda. Esta mini demo valida el concepto antes del desarrollo funcional del Proyecto Final.</p>
+</section>
+</main>
+
+<dialog id="ficha">
+  <button class="close" id="cerrar" aria-label="Cerrar">×</button>
+  <div id="ficha-contenido"></div>
+</dialog>
+
+<footer>BFCD · Mini Demo académica · UdeMM</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
