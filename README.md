@@ -28,4 +28,4 @@ La muestra inicial estará compuesta por 100 objetos digitales distribuidos en c
 
 ## Estado
 
-BFCD-DEMO v0.1 — Prueba de Concepto.
+BFCD-DEMO v0.2 — Prueba de Concepto funcional.\n\n- Catálogo conectado a Supabase PostgreSQL\n- Objetos digitales servidos desde Supabase Storage\n- Búsqueda y filtros\n- Ficha documental\n- Visualización de PDF e imágenes\n- 74 objetos digitales actualmente disponibles en el lote piloto (carga prevista: 100)
