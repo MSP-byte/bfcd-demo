@@ -1,0 +1,5 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+body { margin: 0; min-height: 100vh; }
+.shell { max-width: 960px; margin: 0 auto; padding: 72px 24px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: .8rem; }
+h1 { max-width: 760px; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.05; }

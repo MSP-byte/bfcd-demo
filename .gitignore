@@ -1,0 +1,7 @@
+# BFCD local/private configuration
+js/config.js
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
